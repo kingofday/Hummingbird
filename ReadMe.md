@@ -37,4 +37,7 @@ $('select your hidden input').shbMAAC({
 * hidden input value will conatines all of props in selected object
 
 ### Schema
-![alt text](assets/exp2.png)
+![alt text](assets/exp1.png)
+
+ hidden input value is somthing like this:
+ [{"Value":"0","Text":"Alaska","SomeOtherParams":"nice place 0"}]
