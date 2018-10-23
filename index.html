@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>multiple ajax auto complete</title>
+    <meta name="keywords" content="with ajax call,drop down,auto complete,dynamic data source" />
+    <meta name="description" content="a multi select drop down tag with data source of ajax" />
+    <meta name="author" content="shahrooz bazrafshan" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="assets/kingofday.png" sizes="32x32" />
+    <link rel="icon" href="assets/kingofday.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="assets/kingofday.png" />
+
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/material-design-iconic-font.min.css" rel="stylesheet" />
+    <link href="css/hummingbird.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12">
+                <p class="description">
+                    <br />
+                    <br />
+                    <br />
+                    <h5>Hi</h5>
+                    this is a plugin for using in web pages. it store value property of ajax call response into a hidden input for sending
+                    it to server as json string.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12">
+
+                <form>
+                    <h5>For Example</h5>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">States Of US:</label>
+                        <input type="hidden" name="UserId" id="UserId" />
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!--<script src="js/bootstrap.js"></script>-->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/hummingbird.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#UserId').hummingbird({
+                url: 'http://api.kingofday.ir/Sample/MAAC'
+            });
+
+        });
+    </script>
+
+
+
+
+</body>
+</html>
+
